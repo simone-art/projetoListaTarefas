@@ -11,42 +11,26 @@
 
 <body>
     <div id="container">
-        <p class="texto">adicione una nova tarefa</p>
+        <p class="texto">adiciona uma tarefa</p>
 
-        <div id="adicioneTarefa">
-            <input type="text" id="adicioneTarefa" placeholder="Tarefa 1">
+        <form id="form">
+        <div id="">
+            <input type="text" id="adicioneTarefa" placeholder="Escreva aquí uma nova tarefa">
         </div>
 
-        <button id="btn-roxa">
-                <h1>ADD</h1>
-        </button>
-        <div class="Tabela">
-            <table class="tarefas">
-                <tr>
-                    <th>TAREFA 1</th>
-                </tr>
-                <tr>
-                    <th>TAREFA 2</th>
-                </tr>
-                <tr>
-                    <th>TAREFA 3 </th>
-                </tr>
-                <tr>
-                    <th>TAREFA 4</th>
-                </tr>
-                <tr>
-                    <th>TAREFA 5</th>
-                </tr>
-                <tr>
-                    <th>TAREFA 6</th>
-                </tr>
-            </table>
+        <button id="btn-roxa">ADD</button>
+        <p class="erro"></p>
+        
+        <div id=tarefas>
+            <ul id="Tabela">
+            </ul>
         </div>
 
         <div id="botaos">
-            <button id="btn-checar"></button>
-            <button id="btn-remover"></button>
+            <button id="btn-checar">Checar</button>
+            <button id="btn-remover">Remover</button>
         </div>
+    </form>
     </div>
     <script src="js/script.js"></script>
 </body>
