@@ -39,8 +39,3 @@ botaoRoxo.addEventListener("click", function(evento){
 
 
 
-
-// const tabla = document.getElementById("Tarefas");
-// let tarefas = document.createElement("tr");
-// let mensagemTarefa = texto.value;
-// tarefas.textContent = mensagemTarefa;
