@@ -3,22 +3,51 @@
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
     background-image: linear-gradient(#e0c3fc, #8ec5fc, #ba7af8);
+    background-repeat: repeat-x;
+    background-position: 0 0;
 }
 
-.container {
+#container {
     margin: 0 auto;
-    width: 50%;
-    height: 100vh;
+    width: 500px;
+    height: 900px;
     background-color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
-.titulo {
-    margin-top: 0 auto;
+.texto {
+    margin-top: 100px;
+    font-size: 30px;
+    text-align: center;
 }
+
+#adicioneTarefa {
+    width: 500px;
+    height: 200px;
+    font-size: 20px;
+}
+
+#btn-roxa {
+    background-color: #ba7af8;
+    border: 0 auto;
+    font-size: 15px;
+    color: white;
+}
+
+.tarefas {
+    height: 500px;
+    font-size: 18px;
+}
+
+
+/* .tabela {
+width:500px;
+text-align:center;
+border-collapse:collapse;
+} */
