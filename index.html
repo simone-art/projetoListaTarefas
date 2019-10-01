@@ -5,30 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
     <title>Projeto2</title>
 </head>
 
 <body>
-
     <div id="container">
-        <p>adicione una nova tarefa</p>
-        <input type="text" id="adicioneTarefa" placeholder="Title...">
+        <p class="texto">adicione una nova tarefa</p>
+
+        <div id="adicioneTarefa">
+            <input type="text" id="adicioneTarefa" placeholder="Tarefa 1">
+        </div>
+    
         <button id="btn-roxa">
                 <h1>ADD</h1>
-            </button>
+        </button>
+        <div class="Tabela">
+            <table class="tarefas">
+                    <tr>
+                    <th>TAREFA 1</th>
+                    </tr>
+                    <tr>
+                    <th>TAREFA 2</th>
+                    </tr>
+                    <tr>
+                    <th>TAREFA 3 </th>
+                    </tr>
+                    <tr>
+                    <th>TAREFA 4</th>
+                    </tr>
+                    <tr>
+                    <th>TAREFA 5</th>
+                    </tr>
+                    <tr>
+                    <th>TAREFA 6</th>
+                    </tr>
+            </table>
+        </div>
 
+            <div id="botaos">
+                <button id="btn-checar"></button>
+                <button id="btn-remover"></button>
+            </div>
     </div>
-    <div class="Tarefas">
-
-    </div>
-    <div id="botaos">
-        <button id="btn-checar"></button>
-        <button id="btn-remover"></button>
-    </div>
-
-
-
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
