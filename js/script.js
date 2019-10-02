@@ -1,11 +1,11 @@
 const containerPrincipal = document.getElementById("container");
 const form = document.getElementById("form");
-
 const adicioneTexto = document.getElementById("adicioneTarefa");
 const botaoRoxo = document.getElementById("btn-roxa");
 const tabela = document.getElementById("Tabela");
+const botaoCheck = document.getElementById("btn-checar");
 
-botaoRoxo.addEventListener("click", function(evento){
+form.addEventListener("click", function(evento){
     evento.preventDefault();
     if (adicioneTexto.value.trim() == ""){
         adicioneTexto.getAttribute("placeholder","Por favor, digite a sua tarefa:");
@@ -21,9 +21,8 @@ botaoRoxo.addEventListener("click", function(evento){
         buttonFin.textContent = "X";
         tabelaFin.appendChild(buttonFin);
         
-        buttonFin.addEventListener("click", function (){
+        buttonFin.addEventListener("click", function (evento){
             if (buttonFin.parentNode) {
-                tabelaFin.appendChild(buttonFin);
                 tabela.removeChild(tabelaFin);
             }
         })
@@ -36,4 +35,9 @@ botaoRoxo.addEventListener("click", function(evento){
                 }
         })
     }
+    const botaoCheck = document.getElementById("btn-checar");
+    botaoCheck.addEventListener("click", function (){
+        if (tabela.classList.add("tarefas-completo"));
+    })
 })
+
