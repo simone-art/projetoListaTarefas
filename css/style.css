@@ -44,8 +44,12 @@ body {
 }
 
 .tarefas {
-    height: 500px;
+    height: 50px;
     font-size: 18px;
+}
+
+.tarefas-completo {
+    text-decoration: line-through;
 }
 
 #botaos {
@@ -68,6 +72,10 @@ body {
     color: #ffffff;
     border-radius: 10px;
 }
+
+/* .invisivel{
+    text-decoration: line-through;
+} */
 
 @media(min-width:320px) {
     #container {
