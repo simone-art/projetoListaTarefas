@@ -11,8 +11,8 @@ form.addEventListener("click", function(evento){
         adicioneTexto.getAttribute("placeholder","Por favor, digite a sua tarefa:");
         
     } else {
-        const tabelaFin = document.createElement("li");
-        tabelaFin.classList.add("tarefas");
+        const tabelaFin = document.createElement("p");
+        tabelaFin.classList.add("Tabela");
         tabelaFin.textContent = adicioneTexto.value;
         tabela.appendChild(tabelaFin);
         form.reset();
@@ -34,10 +34,30 @@ form.addEventListener("click", function(evento){
                 tabelaFin.classList.add("tarefas-completo");
                 }
         })
+
+        tabela.setAttribute("draggable", true);
+        tabelaFin.setAttribute("draggable", true);
+        buttonFin.setAttribute("draggable", true);
+
+        let divDrag
+
+        tabela.addEventListener("dragstart", function (ev) {
+            divDrag = ev.target.closest(".Tabela");
+        })
+
+        tabelaFin.addEventListener("dragover", function (ev) {
+            ev.preventDefault();
+            const posicao = ev.target.closest(".Tabela");
+            this.parentNode.insertBefore(divDrag, posicao);
+
+        })
+
+        tabelaFin.addEventListener("dragend", function () {
+            divDrag = null;
+        })
     }
     const botaoCheck = document.getElementById("btn-checar");
     botaoCheck.addEventListener("click", function (){
         if (tabela.classList.add("tarefas-completo"));
-    })
+    })         
 })
-
