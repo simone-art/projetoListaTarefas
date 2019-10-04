@@ -27,7 +27,8 @@ form.addEventListener("click", function(evento){
         })
         
         let buttonFin = document.createElement("button");
-        buttonFin.textContent = "X";
+        buttonFin.textContent = "✓";
+        buttonFin.classList.add ("buttonFin");
         tabelaFin.appendChild(buttonFin);
         
         buttonFin.addEventListener("dblclick", function (evento){

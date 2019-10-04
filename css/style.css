@@ -1,14 +1,20 @@
 * {
     box-sizing: border-box;
 }
+html 
 
 body {
-    width: 100%;
-    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
     font-family: 'Rubik', sans-serif;
-    background-image: linear-gradient(#e0c3fc, #8ec5fc, #ba7af8);
-    background-repeat: repeat-x;
-    background-position: 0 0;
+    background-image: url("../img/fonfo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.fondo {
+    max-width: 100%;
+    max-height: 100%;
+
 }
 
 #container {
@@ -21,12 +27,26 @@ body {
     justify-content: center;
     border-radius: 20px;
 }
+.elementos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
 
 .texto {
     /* margin-top: 100px; */
-    color: #2b0f47;
+    color: #288186;
     font-size: 30px;
     text-align: center;
+}
+
+.papelera {
+    width: 30px;
+    height: 30px;
+    margin: 30px;
+    margin-left: 10px;
+    
 }
 
 #adicioneTarefa {
@@ -35,11 +55,16 @@ body {
     font-size: 20px;
     border-radius: 10px;
     align-self: center;
+    margin-bottom: 10px;
+}
+
+.buttonFin {
+    color: white;
 }
 
 #btn-roxa {
     width: 100%;
-    background-color: #ba7af8;
+    background-color: #8ec5fc;
     border: 0 auto;
     font-size: 15px;
     color: white;
@@ -62,7 +87,7 @@ body {
 }
 
 #tarefas p {
-    background-color: #c385ffcf;
+    background-color: #28818682;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -70,16 +95,20 @@ body {
     height: 50px;
     font-size: 20px;
     color: #ffffff;
-
 }
-#tarefas button{
-    background-color: #c385ffcf;
+
+#tarefas button {
+    background-color: #8ec5fc;
 }
 
 .tarefas-completo {
-    text-decoration: line-through #2b0f47;
+    text-decoration: line-through #8ec5fc;
     /* box-shadow: 0px 1px #2b0f47; */
 }
+.buttonFin {
+    color: white;
+}
+
 
 #botaos {
     display: flex;
@@ -90,23 +119,24 @@ body {
 #btn-checar {
     width: 100px;
     height: 50px;
-    background-color: #ba7af8;
-    color: #ffffff;
+    background-color: plum;
+    color: white;
     border-radius: 10px;
 }
 
 #btn-remover {
     width: 100px;
     height: 50px;
-    background-color: #ba7af8;
+    background-color:plum;
     color: #ffffff;
     border-radius: 10px;
 }
+
 #btn-remover-tarefas {
     width: 120px;
     height: 50px;
-    background-color: #ba7af8;
-    color: #ffffff;
+    background-color: plum;
+    color: white;
     border-radius: 10px;
 }
 
