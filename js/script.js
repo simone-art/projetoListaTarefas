@@ -9,11 +9,13 @@ const botaoCheck = document.getElementById("btn-checar");
 form.addEventListener("click", function(evento){
     evento.preventDefault();
     if (adicioneTexto.value.trim() == ""){
-        adicioneTexto.getAttribute("placeholder","Por favor, digite a sua tarefa:");
+        adicioneTexto.setAttribute("placeholder","Por favor, digite a sua tarefa!");
 
     }   
     // } else if (etiqueta.value.trim() == ""){};    
     else {
+        adicioneTexto.setAttribute("placeholder","Escreva aquí uma nova tarefa");
+        
         const tabelaFin = document.createElement("p");
         tabelaFin.classList.add("Tabela");
         tabelaFin.textContent = adicioneTexto.value;
@@ -22,15 +24,17 @@ form.addEventListener("click", function(evento){
         form.reset();
         
         tabelaFin.addEventListener("click", function(){
-            tabelaFin.getElementById.contains("adicioneTarefa");
-            tabelaFin.getElementById.remove("adicioneTarefa");
+           if (tabelaFin.getElementById.contains("adicioneTarefa")){
+                tabelaFin.getElementById.remove("adicioneTarefa");
+            }
         })
         
-        let buttonFin = document.createElement("button");
+        let buttonFin = document.createElement("span");
         buttonFin.textContent = "X";
+        buttonFin.classList.add ("buttonFin");
         tabelaFin.appendChild(buttonFin);
         
-        buttonFin.addEventListener("dblclick", function (evento){
+        buttonFin.addEventListener("click", function (evento){
             if (buttonFin.parentNode) {
                 tabela.removeChild(tabelaFin);
             }
