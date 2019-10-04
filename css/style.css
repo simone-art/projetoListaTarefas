@@ -7,7 +7,7 @@ body {
     max-width: 100%;
     max-height: 100%;
     font-family: 'Rubik', sans-serif;
-    background-image: url("../img/fonfo.jpg");
+    background-image: url("../img/fondo13.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -41,19 +41,12 @@ body {
     text-align: center;
 }
 
-.papelera {
-    width: 30px;
-    height: 30px;
-    margin: 30px;
-    margin-left: 10px;
-    
-}
 
 #adicioneTarefa {
     width: 500px;
     height: 200px;
     font-size: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     align-self: center;
     margin-bottom: 10px;
 }
@@ -87,7 +80,7 @@ body {
 }
 
 #tarefas p {
-    background-color: #28818682;
+    background-color: #105d9082;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -98,11 +91,12 @@ body {
 }
 
 #tarefas button {
+    margin: 0 auto;
     background-color: #8ec5fc;
 }
 
 .tarefas-completo {
-    text-decoration: line-through #8ec5fc;
+    text-decoration: line-through #0c2238;
     /* box-shadow: 0px 1px #2b0f47; */
 }
 .buttonFin {
@@ -113,13 +107,14 @@ body {
 #botaos {
     display: flex;
     flex-direction: initial;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
 }
 
 #btn-checar {
     width: 100px;
     height: 50px;
-    background-color: plum;
+    background-color: #8ec5fc;
     color: white;
     border-radius: 10px;
 }
@@ -127,7 +122,7 @@ body {
 #btn-remover {
     width: 100px;
     height: 50px;
-    background-color:plum;
+    background-color: #8ec5fc;
     color: #ffffff;
     border-radius: 10px;
 }
@@ -135,7 +130,7 @@ body {
 #btn-remover-tarefas {
     width: 120px;
     height: 50px;
-    background-color: plum;
+    background-color: #8ec5fc;
     color: white;
     border-radius: 10px;
 }
@@ -201,7 +196,7 @@ body {
         width: 500px;
     }
     #adicioneTarefa {
-        width: 490px;
+        width: 500px;
     }
     #btn-roxa {
         height: 70px;
